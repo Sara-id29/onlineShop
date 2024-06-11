@@ -7,12 +7,29 @@
     border-radius: 100%;
     overflow: hidden;
 }
-
+.Profile
+ {
+ margin-top: 50px; /* أو أي قيمة تناسبك */
+    position: fixed;
+    top: 20px; /* Adjusted for vertical alignment */
+    right: 20px; /* Adjusted for alignment */
+    width: 40px;
+    height: 38px;
+    border-radius:100%;
+    overflow: hidden;
+       margin-bottom: 10px;
+}
 .logo img {
     width: 100%;
     height: 100%;
+
+
 }
 
+.Profile img {
+    width: 100%;
+    height: 100%;
+}
 
 .user-info {
     position: fixed;

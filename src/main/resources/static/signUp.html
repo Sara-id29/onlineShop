@@ -1,14 +1,15 @@
-<!DOCTYPE html><head>
+<!DOCTYPE html>
+<head xmlns="http://www.w3.org/1999/html">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--<script src="signUp.JS"></script>-->
     <script>
-  alert("hi2")
-  $(document).ready(function() {
-  alert("doc is ready")
 
+  $(document).ready(function() {
+
+alert("hi")
     $("#userForm").submit(function (event) {
-    alert("hi")
+
         event.preventDefault();
         let user = {
             userName: $("#userName").val(),
@@ -79,8 +80,8 @@
                 <input type="name" id="name">
                 <label for="email">Email</label>
                 <input type="email" id="email">
-                <input type="submit" id="submit" value="Submit">
-                <button type="submit">Save</button>
+             <input type="submit" id="submit" value="Submit">
+
             </div>
             </form>
         </div>
@@ -89,3 +90,10 @@
 
 </body>
 </html>
+
+
+
+
+
+
+

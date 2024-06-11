@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class OnlineShopApplication implements Runnable{
 
 	public static void main(String[] args) {
-		SpringApplication.run(OnlineShopApplication.class, args);
+		SpringApplication.run(OٍnlineShopApplication.class, args);
 	}
 
 	@Override
@@ -19,3 +19,6 @@ public class OnlineShopApplication implements Runnable{
 		System.out.println(us.login("test","1234567"));
 	}
 }
+
+
+

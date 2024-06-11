@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modern Login Page | theuicode.com</title>
+  <title> Login Page</title>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <link rel="stylesheet" href="logIn.css">
@@ -39,13 +39,14 @@
 
       <i class="ri-arrow-right-fill"></i>
     </div>
+
   </div>
 </div>
 <script>
   $("#loginId").submit(function (event) {
         event.preventDefault();
 
-        var user = {
+        var u = {
             userName: $("#userName").val(),
             password: $("#password").val()
         };
@@ -54,9 +55,9 @@
             type: "POST",
             url: "/users/login/",
             contentType: "application/json",
-            data: JSON.stringify(user),
+            data: JSON.stringify(u),
             success: function (data) {
-                alert("User logged in successfully!");
+                alert("User logged in successfully!"+data.id);
                 localStorage.setItem("user_id", data.id);
                 window.location.href = "profile.html";
             },
